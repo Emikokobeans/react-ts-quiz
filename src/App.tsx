@@ -20,8 +20,6 @@ function App() {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(true);
 
-  console.log(questions);
-
   const startQuiz = async () => {
     setLoading(true);
     setGameOver(false);
@@ -66,14 +64,21 @@ function App() {
     <>
       <Style />
       <Wrapper>
-        <h1>QUIZ</h1>
-        {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
+        <h1>Anime Quiz</h1>
+        {gameOver ? (
           <button className='start' onClick={startQuiz}>
             Start
           </button>
         ) : null}
 
         {!gameOver ? <p className='score'>Score: {score}</p> : null}
+
+        {userAnswers.length === TOTAL_QUESTIONS ? (
+          <button className='restart' onClick={startQuiz}>
+            Restart
+          </button>
+        ) : null}
+
         {loading && <p>Loading Questions...</p>}
         {!loading && !gameOver && (
           <QuestionCard

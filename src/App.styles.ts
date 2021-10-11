@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import BGImage from './images/page-turner.svg';
+import BGImage from './images/bganime3.png';
 
 export const Style = createGlobalStyle`
 html {
@@ -13,6 +13,7 @@ body {
     padding: 0 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 * {
@@ -23,53 +24,62 @@ body {
 `;
 
 export const Wrapper = styled.div`
-display: flex,
-flex-direction: column;
-align-items: center;
-> p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > p {
     color: #fff;
+  }
 
-}
-
-.score {
+  .score {
     color: #fff;
     font-size: 2rem;
-    margin: 0;
-}
+    margin: 10px 0;
+  }
 
-h1 {
-    color: #fff; 
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 100px; 
-    font-weight: bold; 
-    letter-spacing: -1px; 
-    line-height: 1; 
+  h1 {
+    color: #fff;
+    font-family: 'Zeyada', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
     text-align: center;
-    text-shadow: 2px 2px black;
-}
+    text-shadow: 2px 2px #dda0dd;
+    background: linear-gradient(#fff, #dda0dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.start, .next {
+  .start,
+  .next,
+  .restart {
     cursor: pointer;
     padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #0492C2;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  margin: 20px 0;
-}
-.start, .next:hover {
-    background-color: #48AAAD
-}
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #be93d4;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #7a4988;
+    margin: 20px 0 20px;
+  }
 
-.start, .next:active {
-    background-color: #63C5DA;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
+  .start:hover,
+  .next:hover,
+  .restart:hover {
+    background-color: #e39ff6;
+  }
 
+  .start:active,
+  .next:active,
+  .restart:active {
+    background-color: #9e7bb5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 `;
