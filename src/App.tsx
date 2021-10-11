@@ -67,7 +67,10 @@ function App() {
     <>
       <Style />
       <Wrapper>
-        <h1>Anime Quiz</h1>
+        <h1>
+          A<span className='fontChange'>nime</span> Q
+          <span className='fontChange'>uiz</span>
+        </h1>
         {gameOver ? (
           <button className='start' onClick={startQuiz}>
             Start

@@ -40,13 +40,16 @@ export const Wrapper = styled.div`
 
   h1 {
     color: #fff;
-    font-family: 'Zeyada', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 100px;
-    font-weight: bold;
     letter-spacing: -1px;
     line-height: 1;
     text-align: center;
     text-shadow: 2px 2px #778899;
+  }
+
+  .fontChange {
+    font-family: 'Zeyada', sans-serif;
   }
 
   .start,
