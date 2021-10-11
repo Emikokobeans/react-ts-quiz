@@ -29,13 +29,13 @@ function App() {
         Difficulty.EASY
       );
       setQuestions(newQuestions);
-      setScore(0);
-      setUserAnswers([]);
-      setNumber(0);
-      setLoading(false);
     } catch (err) {
       alert(err);
     }
+    setScore(0);
+    setUserAnswers([]);
+    setNumber(0);
+    setLoading(false);
   };
 
   const checkAnswer = (event: React.MouseEvent<HTMLButtonElement>) => {
