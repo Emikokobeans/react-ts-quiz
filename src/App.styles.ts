@@ -46,10 +46,7 @@ export const Wrapper = styled.div`
     letter-spacing: -1px;
     line-height: 1;
     text-align: center;
-    text-shadow: 2px 2px #dda0dd;
-    background: linear-gradient(#fff, #dda0dd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #778899;
   }
 
   .start,
