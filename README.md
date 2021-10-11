@@ -1,5 +1,7 @@
 # Anime Quiz App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c4d68a91-a7f8-4fcc-a4fc-09dd48194ef7/deploy-status)](https://app.netlify.com/sites/anime-quiz-by-emi/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Written using TypeScript
