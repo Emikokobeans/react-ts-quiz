@@ -30,6 +30,7 @@ function App() {
       );
       setQuestions(newQuestions);
     } catch (err) {
+      console.log(err);
       alert(err);
     }
     setScore(0);
