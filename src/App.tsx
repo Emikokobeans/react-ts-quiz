@@ -23,17 +23,19 @@ function App() {
   const startQuiz = async () => {
     setLoading(true);
     setGameOver(false);
-
-    const newQuestions = await fetchQuizQuestions(
-      TOTAL_QUESTIONS,
-      Difficulty.EASY
-    );
-
-    setQuestions(newQuestions);
-    setScore(0);
-    setUserAnswers([]);
-    setNumber(0);
-    setLoading(false);
+    try {
+      const newQuestions = await fetchQuizQuestions(
+        TOTAL_QUESTIONS,
+        Difficulty.EASY
+      );
+      setQuestions(newQuestions);
+      setScore(0);
+      setUserAnswers([]);
+      setNumber(0);
+      setLoading(false);
+    } catch (err) {
+      alert(err);
+    }
   };
 
   const checkAnswer = (event: React.MouseEvent<HTMLButtonElement>) => {
